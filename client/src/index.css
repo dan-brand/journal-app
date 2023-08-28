@@ -1,0 +1,212 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@400;500;700&display=swap');
+
+html {
+    /* work in base 10px */
+    /* 10px / 16px = 62.5% */
+    /* Percentage of user browsers font-size setting */
+    font-size: 62.5%;
+}
+
+:root {
+    --primary: #339af0;
+    --primary-light:  #d0ebff;
+    --primary-dark: #1c7ed6;
+
+    --secondary: #9775fa;
+
+    --tertiary: #ff922b;
+
+    --grey: #495057;
+    --grey-light: #F1F3F5;
+    --grey-dark: #212529;
+
+    --white: #ffffff;
+
+    --nav-height: 12vh;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--grey-dark);
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+
+    /* this and main content was added later to push footer down */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container covers the full viewport height */
+}
+
+.main-content {
+    flex: 1;
+}
+
+.inner-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+p, li {
+    color: var(--grey);
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 5.96rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h2 {
+    font-size: 4.768rem;
+}
+
+h3 {
+    font-size: 3.815rem;
+}
+
+h4 {
+    font-size: 3.052rem;
+}
+
+h5 {
+    font-size: 2.414rem;
+}
+
+p {
+    font-size: 1.953rem;
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: 1.563rem;
+    font-weight: 400;
+}
+
+li {
+    font-size: 1.953rem;
+    font-weight: 400;
+    list-style: none;
+}
+
+a {
+    text-align: center;
+}
+
+.highlight {
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.highlight-secondary {
+    background-color: var(--secondary);
+}
+
+.highlight-tertiary {
+    background-color: var(--tertiary);
+}
+
+
+
+.form {
+    width: 40vw;
+
+    /* added to get good spacing between form elements */
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.563rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    /* letter-spacing: var(--letterSpacing); */
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--grey);
+  margin-bottom: 3rem;
+  height: 5rem;
+
+}
+
+.btn {
+    display: inline-block;
+    /* Maybe do this margin-right but then later show why better to refactor with flexbox? */
+    /* margin-right: 10px; */
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+
+.btn-primary {
+    border: none;
+    background-color: #339af0;
+    color: white;
+}
+
+.btn-primary-inverse {
+    border: 1px solid #339af0;
+    background-color: white;
+    color: #339af0;
+}
+
+.btn:hover, .btn:active {
+    background-color: var(--primary);
+    color: white;
+}
+
+
+.btn-secondary {
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.emoji {
+    font-size: 4rem;
+    margin: 2rem 0;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d0ebff;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
